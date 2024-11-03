@@ -31,7 +31,13 @@ function App() {
   
       <section class="home-section" id="home">
           <div class="home-content">
-              <img src="\images\photo.jpg" alt="Your Photo" class="profile-photo" data-aos="fade-down"></img>
+          <img 
+    src={`${process.env.PUBLIC_URL}/images/photo.jpg`} 
+    alt="Your Photo" 
+    className="profile-photo" 
+    data-aos="fade-down" 
+/>
+
               <h2 data-aos="fade-down">Welcome to My Portfolio</h2>
               <p data-aos="fade-up">I am Abinisha, a passionate Computer Science student specializing in Web Development, AI, and Machine Learning.Explore my work and get in touch!</p>
               <a href="projects.html" class="btn" data-aos="zoom-in">Explore My Work</a>
@@ -43,7 +49,14 @@ function App() {
               <h2>About Me</h2>
               <p>I'm a final year Computer Science student with a passion for web development, AI, and machine learning. I enjoy solving problems and building innovative solutions.</p>
               <p>In my free time, I enjoy contributing to open-source projects and constantly learning new technologies to enhance my skills.</p>
-              <p><a href="file:///C:/Users/Admin/OneDrive/Documents/job/resume.pdf" download class="download-btn">Download My CV</a></p>
+              <p><a 
+    href={`${process.env.PUBLIC_URL}/resume.pdf`} 
+    download 
+    className="download-btn"
+>
+    Download My CV
+</a>
+</p>
           </div>
       </section>
   
